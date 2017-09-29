@@ -21,6 +21,7 @@ public:
 	void addItem(Item item) { _inventory->push_back(item); }
 	bool dropItem(Item item);
 	bool dropItem(int index);
+	const Item * getItem(int index);
 
 	const void sortBy(sortOrder order);
 };
