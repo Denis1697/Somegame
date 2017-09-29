@@ -12,9 +12,10 @@ private:
 	int _height;
 	Point * _vertices;
 public:
+	Rectangle(Rectangle &rectangle);
 	Rectangle(Point TopLeft, Point BottomRight);
 	Rectangle(int topLeftX, int topLeftY, int bottomRightX, int bottomRightY);
 
 	const Point * getVertices() { return _vertices; }
-	void setVertices(Point * vertices);
+	void setVertices(const Point * vertices);
 };

@@ -1,5 +1,12 @@
 #include "Rectangle.h"
 
+Rectangle::Rectangle(Rectangle & rectangle)
+{
+	this->setVertices(rectangle.getVertices());
+	_width = rectangle._width;
+	_height = rectangle._height;
+}
+
 Rectangle::Rectangle(Point TopLeft, Point BottomRight)
 {
 	_vertices = new Point[verticesCount];
